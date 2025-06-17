@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+   
+.container{
+    background: url(f16.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+div.navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(25, 240, 211, 0.4)
+}
+
+div.logo{
+    display:inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+div.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: ghostwhite;
+}
+
+
+
+.navbar ul{
+    float: right;
+    margin-right: 50px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+    transition: 1s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:#ff6e00;
+    border-radius: 2px;
+}
+
+.container .center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+    color:#fff;
+    font-size: 70px;
+    font-weight:bold;
+    width:900px;
+    text-align: center;
+}
+
+.center h2{
+    color:#fff;
+    font-size: 50px;
+    font-weight: 50px;
+    width:885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.buttons{
+    text-align: center;
+    margin: 10px 200px;
+}
+
+.buttons button{
+    height:50px;
+    width:150px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#ffb3b3;
+    background: rgb(207,96,88);
+    border:solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition:.5s;
+    
+    
+}
+
+.buttons button:hover{
+    background: #fff;
+}
