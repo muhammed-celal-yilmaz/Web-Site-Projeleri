@@ -1,0 +1,58 @@
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+
+    width: 300px;
+    height: 100px;
+    background-color: rgb(236, 222, 20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:before{
+
+    color: aliceblue;
+    font-family: sans-serif;
+    content : 'Shut Down';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:25px;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+.btn:hover::before{
+
+        top: -30px;
+}
+
+.btn::after{
+
+    font-family: 'Ionicons';
+    content: '\f2a9';
+    color: darkslategrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:50px;
+    top: 140%;
+    transition: all 0.5s;
+}
+
+.btn:hover::after{
+    
+    top: 50%;
+
+}
+
